@@ -4,7 +4,7 @@
   "description": "",
   "main": "rectangle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "grunt lint&& grunt unitTest"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/wangyingyingwyy/rectangle#readme",
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "chai": "^4.2.0",
+    "grunt": "^0.4.5",
     "grunt-contrib-csslint": "^2.0.0",
     "grunt-eslint": "^22.0.0",
-    "grunt-htmlhint": "^0.9.13"
+    "grunt-htmlhint": "^0.9.13",
+    "mocha": "^7.1.0"
   }
 }

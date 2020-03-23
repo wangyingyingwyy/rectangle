@@ -1,5 +1,4 @@
-/*global $:true*/
-
+/* global $ Rectangle: true */
 $(function () {
     //get dom elem
     var $width=$('#width'),
@@ -10,18 +9,21 @@ $(function () {
     /**calc button click event */
     $btnCal.click(function(){
         //get value
-        var w=Number($width.val()),
-            h=Number($height.val());
+        var w=$width.val(),
+            h=$height.val();
         //calculate
+        /*
         var p=roundFloat(2*(w+h),2),
             a=roundFloat(w*h,2);
+        */
         // var p=2*(w+h),
         //     a=w*h;
+
+        // 工厂函数
+        var rect=new Rectangle(w,h);
+
         //output
-        $perimeter.val(p);
-        $area.val(a);
+        $perimeter.val(rect.perimeter());
+        $area.val(rect.area());
     });
-    function roundFloat(x,n){
-        return Math.round(x* Math.pow(10,n)) / Math.pow(10, n);
-    }
 });
