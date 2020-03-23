@@ -20,7 +20,6 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "grunt": ">=0.4.5",
-    "grunt-mocha": "^0.4.12",
     "grunt-contrib-csslint": "^2.0.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-htmlmin": "^3.0.0",
