@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/wangyingyingwyy/rectangle#readme",
   "devDependencies": {
-    "grunt": ">=0.4.5",
+    "grunt": "^1.1.0",
     "grunt-contrib-csslint": "^2.0.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-htmlmin": "^3.0.0",
